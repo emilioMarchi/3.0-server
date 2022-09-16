@@ -28,11 +28,10 @@ app.get('/', async (req,res) => {
     try{
         await connectDB()
         await UserQuery.find({}, (err, data) => {
-            res.send(data)
+            res.json(data).send('todo ok')
         })
     }   
     catch{console.log('no response')}     
-    res.send('todo ok')
 })
 app.post('/', async (req,res) => {
     try{
