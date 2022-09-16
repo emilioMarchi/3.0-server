@@ -13,7 +13,7 @@ const { setMaxListeners } = require('./mongoose-models/userQueries')
 //
 const app = express()
 const corsOptions = {
-    origin: ['http://34.226.121.56/','http://ec2-34-226-121-56.compute-1.amazonaws.com/'],
+    origin: ['http://34.226.121.56','http://ec2-34-226-121-56.compute-1.amazonaws.com'],
     preflightContinue:false,
 }  
 app.use(cors(corsOptions))
