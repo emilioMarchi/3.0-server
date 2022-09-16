@@ -32,6 +32,7 @@ app.get('/', async (req,res) => {
         })
     }   
     catch{console.log('no response')}     
+    res.send('todo ok')
 })
 app.post('/', async (req,res) => {
     try{
